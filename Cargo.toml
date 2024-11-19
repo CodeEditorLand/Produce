@@ -4,7 +4,7 @@ path = "Source/Library.rs"
 
 [build-dependencies]
 serde = { version = "1.0.215", features = ["derive"] }
-serde_json = "1.0.132"
+serde_json = "1.0.133"
 toml = "0.8.19"
 tauri-build = { version = "2.0.3", features = ["config-json5"] }
 json5 = "0.4.1"
@@ -13,7 +13,7 @@ json5 = "0.4.1"
 async-trait = "0.1.83"
 futures = "0.3.31"
 serde = { version = "1.0.215", features = ["derive"] }
-serde_json = "1.0.132"
+serde_json = "1.0.133"
 tokio = "1.41.1"
 tokio-tungstenite = "0.24.0"
 portpicker = "0.1.1"
