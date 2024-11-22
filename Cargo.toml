@@ -65,7 +65,7 @@ tauri-plugin-websocket = "2.0.1"
 # error: failed to select a version for `webkit2gtk-sys`.
 
 Echo = { version = "0.0.1", path = "../Echo" }
-unbug = { version = "0.2.0", features = ["enable"] }
+unbug = { version = "0.3.0", features = ["enable"] }
 
 [lib]
 name = "Mountain"
