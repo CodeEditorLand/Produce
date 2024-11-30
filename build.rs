@@ -17,7 +17,9 @@ struct Package {
 fn main() {
 	if !tauri_build::is_dev() {
 		println!("cargo:rerun-if-changed=Cargo.toml");
+
 		println!("cargo:rerun-if-changed=tauri.conf.json");
+
 		println!("cargo:rerun-if-changed=tauri.conf.json5");
 
 		let Version =
