@@ -83,7 +83,7 @@ autoexamples = false
 autotests = false
 publish = false
 default-run = "Mountain"
-license = "MIT"
+license-file = "LICENSE"
 
 [features]
 default = []
