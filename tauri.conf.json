@@ -98,7 +98,7 @@
 			"hardenedRuntime": true,
 			"minimumSystemVersion": "10.0"
 		},
-		"publisher": "Land",
+		"publisher": "PlayForm",
 		"resources": null,
 		"shortDescription": "",
 		"targets": "all",
