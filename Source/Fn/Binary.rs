@@ -13,10 +13,14 @@ pub fn Fn() {
 				tauri::Builder::default()
 			};
 
+			#[cfg(any(windows, target_os = "linux"))]
+			{
+				Builder = Builder.any_thread();
+			}
+
 			Builder
-				.any_thread()
 				.setup(|Tauri| {
-					let mut Daemon = tauri::WebviewWindowBuilder::new(
+					let Daemon = tauri::WebviewWindowBuilder::new(
 						Tauri,
 						"Daemon",
 						tauri::WebviewUrl::App("index.html".into()),
