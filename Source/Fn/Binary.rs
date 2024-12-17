@@ -1,4 +1,3 @@
-#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 #![allow(non_snake_case)]
 
 #[allow(dead_code)]
@@ -15,10 +14,9 @@ pub fn Fn() {
 			};
 
 			Builder
-				// .any_thread()
+				.any_thread()
 				.setup(|Tauri| {
-					// let mut Daemon = tauri::WebviewWindowBuilder::new(
-					let Daemon = tauri::WebviewWindowBuilder::new(
+					let mut Daemon = tauri::WebviewWindowBuilder::new(
 						Tauri,
 						"Daemon",
 						tauri::WebviewUrl::App("index.html".into()),
