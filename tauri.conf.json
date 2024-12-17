@@ -29,9 +29,9 @@
 		"withGlobalTauri": false
 	},
 	"build": {
-		"beforeBuildCommand": "pnpm run prepublishOnly --filter=@codeeditorland/sky",
+		"beforeBuildCommand": "",
 		"beforeBundleCommand": "",
-		"beforeDevCommand": "pnpm run Run --filter=@codeeditorland/sky --filter=@codeeditorland/wind",
+		"beforeDevCommand": "",
 		"devUrl": "http://localhost:9999",
 		"features": [],
 		"frontendDist": "../Sky/Target",
