@@ -3,23 +3,23 @@ name = "Mountain"
 path = "Source/Library.rs"
 
 [build-dependencies]
-serde = { version = "1.0.216", features = ["derive"] }
+serde = { version = "1.0.217", features = ["derive"] }
 serde_json = { version = "1.0.134" }
 toml = { version = "0.8.19" }
-tauri-build = { version = "2.0.3", features = ["config-json5"] }
+tauri-build = { version = "2.0.4", features = ["config-json5"] }
 json5 = { version = "0.4.1" }
 
 [dependencies]
-async-trait = "0.1.83"
+async-trait = "0.1.85"
 futures = { version = "0.3.31" }
-serde = { version = "1.0.216", features = ["derive"] }
+serde = { version = "1.0.217", features = ["derive"] }
 serde_json = { version = "1.0.134" }
 tokio = { version = "1.42.0" }
 tokio-tungstenite = "0.26.1"
 portpicker = { version = "0.1.1" }
 regex = { version = "1.11.1" }
 
-tauri = { version = "2.1.1", features = ["tray-icon", "config-json5"] }
+tauri = { version = "2.2.0", features = ["tray-icon", "config-json5"] }
 
 tauri-plugin-authenticator = "2.0.0-rc.1"
 tauri-plugin-autostart = "2.2.0"
@@ -37,7 +37,7 @@ tauri-plugin-process = "2.2.0"
 tauri-plugin-single-instance = "2.2.0"
 tauri-plugin-store = "2.2.0"
 tauri-plugin-upload = "2.2.1"
-tauri-plugin-websocket = "2.2.0"
+tauri-plugin-websocket = "2.2.1"
 
 # TODO: Check if needed
 # tauri-plugin-shell = "2.0.0-rc.3"
