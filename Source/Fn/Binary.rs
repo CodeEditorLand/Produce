@@ -7,7 +7,7 @@ pub fn Fn() {
 		.build()
 		.expect("Cannot build.")
 		.block_on(async {
-			let Builder = if cfg!(debug_assertions) {
+			let mut Builder = if cfg!(debug_assertions) {
 				tauri::Builder::default().plugin(tauri_plugin_devtools::init())
 			} else {
 				tauri::Builder::default()
@@ -20,7 +20,7 @@ pub fn Fn() {
 
 			Builder
 				.setup(|Tauri| {
-					let Daemon = tauri::WebviewWindowBuilder::new(
+					let mut Daemon = tauri::WebviewWindowBuilder::new(
 						Tauri,
 						"Daemon",
 						tauri::WebviewUrl::App("index.html".into()),
